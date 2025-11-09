@@ -4,3 +4,262 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+/* Navbar */
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(./images/banner.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 150px;
+}
+.nav_link {
+  flex: 1;
+  text-align: right;
+}
+.nav_link ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav_link ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav_link ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav_link ul li:hover::after {
+  width: 100%;
+}
+.text_box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text_box h1 {
+  font-size: 62px;
+}
+.text_box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: white;
+}
+.hero_btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 12px 34px;
+  border: 1px solid white;
+  font-size: 13px;
+  border-radius: 5px;
+  font-weight: 600;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero_btn:hover {
+  border: 1px solid #f44336;
+  background-color: #f44336;
+  transition: 1s;
+}
+nav .fa-solid {
+  display: none;
+}
+@media (max-width: 700px) {
+  .text_box h1 {
+    font-size: 20px;
+  }
+  .text_box p {
+    margin: 10px 0 40px;
+    font-size: 12px;
+    color: white;
+  }
+  .nav_link ul li {
+    display: block;
+  }
+  .nav_link {
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -200px; /* menu hidden at left */
+    text-align: left;
+    background-color: #f44336;
+    z-index: 999;
+    transition: 1s;
+  }
+  nav .fa-solid {
+    display: block;
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+  }
+  .nav_link ul {
+    padding: 30px;
+  }
+}
+
+/* Course */
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.course h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.course_col {
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  transition: 0.5s;
+}
+.course_col:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Campus */
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.campus h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.campus p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.campus_col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.campus_col img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.layer {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.layer:hover {
+  background-color: rgba(4, 9, 30, 0.4);
+}
+.layer h3 {
+  width: 100%;
+  color: white;
+  font-weight: 500;
+  font-size: 26px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.5s;
+}
+.campus_col:hover h3 {
+  opacity: 1;
+  bottom: 49%;
+}
+@media (max-width: 700px) {
+  .layer {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Facilities */
+.facilities {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-top: 100px;
+}
+.facilities_col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+.facilities_col img {
+  border-radius: 10px;
+  width: 100%;
+}
+.facilities p {
+  padding: 0;
+}
+.facilities h3 {
+  text-align: left;
+  margin-bottom: 15px;
+  margin-top: 16px;
+}
