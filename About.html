@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ecuford</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <section class="Sub_header">
+      <nav>
+        <a href="index.html"> <img src="./images/logo.png" alt="" /> </a>
+        <div class="nav_link about_link" id="nav_link">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./About.html">ABOUT</a></li>
+            <li><a href="#">COURSE</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <!-- About Content -->
+    <section class="about_us">
+      <div class="row">
+        <div class="about_col">
+          <h1>We Are The World's Largest University</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, sed
+            dignissimos voluptatem distinctio veritatis eos cum quibusdam minima
+            laborum? Hic, nobis praesentium! Assumenda error libero placeat iure
+            iusto non haru Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, fugit.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, sed
+            dignissimos voluptatem distinctio veritatis eos cum quibusdam minima
+            laborum? Hic, nobis praesentium! Assumenda error libero placeat iure
+            iusto non haru Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, fugit.
+          </p>
+          <a href="#" class="hero_btn red_btn">Explore Now</a>
+        </div>
+        <div class="about_col">
+          <img src="./images/about.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor quidem
+        error doloribus reiciendis accusantium, perferendis a odio fugiat <br />
+        aliquam vitae quibusdam molestias deserunt fuga consequatur sed,
+        voluptate dicta eos? Soluta!
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa-solid fa-heart"></i> by Shaad</p>
+    </section>
+
+    <!-- JS for toggle Menu -->
+    <script
+      src="https://kit.fontawesome.com/a810b406b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let nav_link = document.getElementById("nav_link");
+      function showMenu() {
+        nav_link.style.right = "0";
+      }
+      function hideMenu() {
+        nav_link.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
