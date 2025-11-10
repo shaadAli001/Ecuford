@@ -276,10 +276,13 @@ h3 {
   border-radius: 10px;
   margin-bottom: 5%;
   text-align: left;
-  background-color: #fff3f3;
+  background-color: #fcf0f0;
   padding: 25px;
   cursor: pointer;
   display: flex;
+}
+.testimonials_col:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 }
 .testimonials_col img {
   height: 50px;
@@ -289,6 +292,8 @@ h3 {
 }
 .testimonials_col p {
   padding: 0;
+  color: black;
+  font-weight: 300;
 }
 .testimonials_col h3 {
   text-align: left;
@@ -331,7 +336,6 @@ h3 {
 .footer {
   width: 100%;
   text-align: center;
-  padding: 30px 0;
 }
 .footer h4 {
   margin: 25px 0 20px 0;
