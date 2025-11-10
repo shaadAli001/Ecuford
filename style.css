@@ -148,7 +148,7 @@ p {
 }
 .course_col {
   flex-basis: 31%;
-  background: #fff3f3;
+  background: rgba(243, 231, 231, 0.9);
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
@@ -181,7 +181,7 @@ h3 {
 }
 .campus p {
   color: #777;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 22px;
   padding: 10px;
@@ -213,7 +213,7 @@ h3 {
   transition: 0.5s;
 }
 .layer:hover {
-  background-color: rgba(4, 9, 30, 0.4);
+  background-color: rgba(4, 9, 30, 0.6);
 }
 .layer h3 {
   width: 100%;
@@ -262,4 +262,91 @@ h3 {
   text-align: left;
   margin-bottom: 15px;
   margin-top: 16px;
+}
+
+/* testimonials */
+.testimonials {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.testimonials_col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background-color: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+.testimonials_col img {
+  height: 50px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.testimonials_col p {
+  padding: 0;
+}
+.testimonials_col h3 {
+  text-align: left;
+}
+.testimonials_col .fa-solid,
+.fa-regular {
+  color: #f44336;
+}
+@media (max-width: 700px) {
+  .testimonials_col img {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}
+/* CTA */
+.cta {
+  width: 80%;
+  margin: 100px auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./images/banner2.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  border-radius: 10px;
+  padding: 100px 0;
+}
+.cta h1 {
+  color: white;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+@media (max-width: 700px) {
+  .cta h1 {
+    font-size: 20px;
+  }
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer h4 {
+  margin: 25px 0 20px 0;
+  font-weight: 600;
+}
+.icons,
+.fa-brands {
+  cursor: pointer;
+  color: #f44336;
+  margin: 0 14px;
+  padding: 18px 0;
+  font-size: 1rem;
+}
+.fa-heart {
+  color: #f44336;
+  padding: 0;
+  margin: 0px 3px;
 }
