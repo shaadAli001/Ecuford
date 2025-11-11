@@ -22,6 +22,7 @@ nav {
 }
 nav img {
   width: 150px;
+  position: relative;
 }
 .nav_link {
   flex: 1;
@@ -103,7 +104,7 @@ nav .fa-solid {
   .nav_link {
     width: 200px;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -200px; /* menu hidden at left */
     text-align: left;
@@ -111,6 +112,9 @@ nav .fa-solid {
     z-index: 999;
     transition: 1s;
   }
+  /* .about_link {
+    height: 50%;
+  } */
   nav .fa-solid {
     display: block;
     font-size: 22px;
@@ -394,9 +398,9 @@ h3 {
 .red_btn:hover {
   color: white;
 }
-.about_link {
+/* .about_link {
   height: 50%;
-}
+} */
 
 /* Blog  */
 .blog_content {
@@ -470,6 +474,7 @@ textarea {
   width: 80%;
   margin: auto;
   padding: 80px 0;
+  text-align: center;
 }
 .location iframe {
   width: 100%;
@@ -502,10 +507,14 @@ textarea {
   color: #555;
   font-weight: 400;
 }
-.contact_col input, .contact_col textarea{
+.contact_col input,
+.contact_col textarea {
   width: 100%;
   padding: 15px;
   margin-bottom: 17px;
   outline: none;
   border: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
