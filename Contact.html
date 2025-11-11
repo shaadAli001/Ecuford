@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <title>Ecuford</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <section class="Sub_header">
+    <nav>
+      <a href="index.html"> <img src="./images/logo.png" alt="" /> </a>
+      <div class="nav_link about_link" id="nav_link">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./About.html">ABOUT</a></li>
+          <li><a href="./Course.html">COURSE</a></li>
+          <li><a href="./Blog.html">BLOG</a></li>
+          <li><a href="./Contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact US</h1>
+  </section>
+
+  <!-- Contact -->
+  <section class="location">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.087860327104!2d76.2899102747937!3d10.009601290096294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d731c34d3c1%3A0xdf39f3995c94bfce!2sSree%20Narayana%20Cross%20Rd%2C%20Keerthi%20Nagar%2C%20Mamangalam%2C%20Elamakkara%2C%20Ernakulam%2C%20Kochi%2C%20Kerala%20682026!5e0!3m2!1sen!2sin!4v1762799445819!5m2!1sen!2sin"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <div class="contact_us">
+    <div class="row">
+      <div class="contact_col">
+        <div>
+          <i class="fa-solid fa-home"></i>
+          <span>
+            <h5>XYZ Road,ABC Building</h5>
+            <p>Banglore,Karnataka,IN</p>
+          </span>
+        </div>
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <span>
+            <h5>91 + 4789642</h5>
+            <p>Monday to Saturday 10AM to 6PM</p>
+          </span>
+        </div>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <span>
+            <h5>info@easytutorial.com</h5>
+            <p>Email us your query</p>
+          </span>
+        </div>
+      </div>
+      <div class="contact_col">
+        <form>
+          <input type="text" placeholder="Enter your name" required>
+          <input type="email" placeholder="Enter your Email Addess" required>
+          <input type="text" placeholder="Enter your Message" required>
+          <textarea rows="8"></textarea>
+          <button class="hero_btn red_btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <section class="footer">
+    <h4>Contact Us</h4>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor quidem
+      error doloribus reiciendis accusantium, perferendis a odio fugiat <br />
+      aliquam vitae quibusdam molestias deserunt fuga consequatur sed,
+      voluptate dicta eos? Soluta!
+    </p>
+    <div class="icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-solid fa-heart"></i> by Shaad</p>
+  </section>
+
+  <!-- JS for toggle Menu -->
+  <script src="https://kit.fontawesome.com/a810b406b9.js" crossorigin="anonymous"></script>
+  <script>
+    let nav_link = document.getElementById("nav_link");
+    function showMenu() {
+      nav_link.style.right = "0";
+    }
+    function hideMenu() {
+      nav_link.style.right = "-200px";
+    }
+  </script>
+</body>
+
+</html>
