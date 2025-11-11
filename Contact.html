@@ -72,15 +72,15 @@
           </div>
         </div>
         <div class="contact_col">
-          <form>
-            <input type="text" placeholder="Enter your name" required />
+          <form action="form_handle.php" method="post">
+            <input type="text" name="name" placeholder="Enter your name" required />
             <input
-              type="email"
+              type="email" name="email"
               placeholder="Enter your Email Addess"
               required
             />
-            <input type="text" placeholder="Enter your Subject" required />
-            <textarea rows="8" placeholder=""></textarea>
+            <input type="text" name="Subject" placeholder="Enter your Subject" required />
+            <textarea rows="8" name="message" placeholder=""></textarea>
             <button type="submit" class="hero_btn red_btn">Submit</button>
           </form>
         </div>
