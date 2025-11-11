@@ -152,7 +152,7 @@ p {
 }
 .course_col {
   flex-basis: 31%;
-  background: rgba(243, 231, 231, 0.2);
+  background: #fcf0f0;
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
